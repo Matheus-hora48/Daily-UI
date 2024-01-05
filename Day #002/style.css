@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e3f2fd;
+  border: none;
+  outline: none;
+}
+
+.main-container {
+  width: 420px;
+}
+
+.front {
+  position: absolute;
+  background-image: url("imgs/bg.png");
+  background-size: cover;
+  top: 0;
+  left: 0;
+  padding: 25px;
+  border-radius: 28px;
+  max-width: 480px;
+  backface-visibility: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: perspective(1000px) rotateY(0deg);
+  transition: transform 0.4s ease-in-out;
+}
+header,
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .chip {
+  width: 48px;
+}
+
+.logo img {
+  width: 48px;
+  margin-right: 10px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+header .chip {
+  width: 60px;
+}
+
+h6 {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+h5.card-number {
+  margin-top: 4px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+h5.name {
+  margin-top: 20px;
+}
+
+.container-card {
+  margin-bottom: -150px;
+  position: relative;
+  height: 250px;
+  width: 400px;
+}
+
+.container-card .card-details {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.container-card .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("imgs/bg.png");
+  background-size: cover;
+  padding: 25px;
+  border-radius: 28px;
+  width: 480px;
+  backface-visibility: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: perspective(1200px) rotateY(180deg);
+  transition: transform 0.4s ease-in-out;
+}
+
+.container-card .back .stripe {
+  background: #000;
+  width: 100%;
+  margin: 10px 0;
+  height: 50px;
+}
+
+.container-card .back .box {
+  padding: 0 20px;
+}
+
+.container-card .back .box h6 {
+  color: #fff;
+}
+
+.container-card .back .box .cvv-box {
+  height: 50px;
+  padding: 10px;
+  margin-top: 5px;
+  color: #333;
+  background: #fff;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.container-card .back .box img {
+  margin-top: 30px;
+  width: 30px;
+}
+
+.container-form {
+  margin-top: 20px;
+}
+
+form {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+form > .input-box {
+  margin-top: 20px;
+}
+
+.input-box > span {
+  display: block;
+  color: #999;
+  padding-bottom: 5px;
+}
+
+.input-box > input,
+.input-box > select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: #444;
+}
+
+form > .flexbox {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+}
+
+.flexbox > .input-box {
+  flex: 1 1 150px;
+}
+
+form > .submit-btn {
+  cursor: pointer;
+  width: 100%;
+  background: linear-gradient(45deg, blueviolet, deeppink);
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 10px;
+  transition: 0.2s linear;
+  break-before: 5px;
+  border: none;
+}
+
+form > .submit-btn:hover {
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
